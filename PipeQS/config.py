@@ -4,7 +4,7 @@ BACKWARD_QUANTIZATION = True
 BITS = 2
 
 # Staleness parameters
-STALE = True
+STALE = False
 STALE_THRESHOLD = 2
 
 # Adaptive bit-width and staleness adjustment parameters
