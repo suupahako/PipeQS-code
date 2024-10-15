@@ -10,7 +10,7 @@ PipeQS is an adaptive quantization and staleness-aware pipeline distributed trai
 
 - Ubuntu 22.04
 - Python 3.12
-- CUDA 11.8
+- CUDA 12.1
 - [PyTorch 2.3.0](https://github.com/pytorch/pytorch)
 - [DGL 2.3.0](https://github.com/dmlc/dgl)
 
@@ -18,12 +18,16 @@ PipeQS is an adaptive quantization and staleness-aware pipeline distributed trai
 
 #### Step 1: Install Software Dependencies
 
-please follow the official guides ([[1]](https://pytorch.org/get-started/locally/), [[2]](https://www.dgl.ai/pages/start.html), [[3]](https://ogb.stanford.edu/docs/home/)) to install PyTorch, DGL and OGB.
+please  install PyTorch and DGL.
+
+```
+conda install -c dglteam/label/th23_cu121 dgl
+```
 
 #### Step 2: Setup Quantization Code
 
 ```
-  python helper/quantization/setup.py install
+python helper/quantization/setup.py install
 ```
 
 ### Run with Single Compute Node
@@ -34,4 +38,3 @@ please run `scripts/reddit_full.sh`,  `scripts/ogbn-products_full.sh` or  `scrip
 
 please run `obgn_multi_node.sh`
 
-### 
