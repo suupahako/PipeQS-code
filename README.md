@@ -36,5 +36,5 @@ please run `scripts/reddit_full.sh`,  `scripts/ogbn-products_full.sh` or  `scrip
 
 ### Run with Multiple Compute Nodes
 
-please run `obgn_multi_node.sh`
+please run `ogbn_multi_node.sh`
 
